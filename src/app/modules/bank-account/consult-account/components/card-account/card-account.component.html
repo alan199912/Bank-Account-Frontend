@@ -1,0 +1,6 @@
+<a *ngIf="account" [routerLink]="['balance/', account.n]" class="card">
+  <div class="card-title">
+    {{ account.tipo_letras | typeBankAccount }}
+  </div>
+  <div class="card-text">Nro: {{ account.n }}</div>
+</a>

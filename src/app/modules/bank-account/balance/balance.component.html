@@ -1,0 +1,15 @@
+<section class="section-balance">
+  <h3 class="text-muted">Consulta tu Saldo</h3>
+  <h2 class="title">Este es tu saldo actual</h2>
+
+  <app-spinner></app-spinner>
+
+  <div class="content-info" *ngIf="account">
+    <p>Saldo de la cuenta: {{ account.saldo }}</p>
+    <p>
+      Tipo de cuenta:
+      {{ account.tipo_letras | typeBankAccount: account.moneda }}
+    </p>
+    <p>Número de cuenta: {{ account.n }}</p>
+  </div>
+</section>

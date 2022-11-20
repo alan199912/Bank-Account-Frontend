@@ -1,0 +1,14 @@
+<section class="section-consult-account">
+  <h3 class="text-muted">Consulta tu Saldo</h3>
+  <h2 class="title">Selecciona la Cuenta a Consultar</h2>
+
+  <app-spinner></app-spinner>
+
+  <div *ngIf="!isLoading" class="content-accounts">
+    <a (click)="getAccounts(pagination.previous?.page!)" class="btn-pagination" *ngIf="pagination?.previous">
+      « Opciones anterioes
+    </a>
+    <app-card-account *ngFor="let account of accounts" [account]="account"></app-card-account>
+    <a (click)="getAccounts(pagination.next?.page!)" class="btn-pagination" *ngIf="pagination?.next">Más opciones »</a>
+  </div>
+</section>

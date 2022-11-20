@@ -1,0 +1,37 @@
+@import 'src/styles.scss';
+
+:host {
+  .section-consult-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .text-muted {
+      font-weight: 500;
+      color: #003050;
+      margin-bottom: 0.5rem;
+    }
+
+    .title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #003050;
+    }
+
+    .content-accounts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+      width: 100%;
+      margin: 3rem 0;
+    }
+
+    .btn-pagination {
+      @include card;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+}

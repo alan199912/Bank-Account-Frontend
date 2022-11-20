@@ -1,0 +1,15 @@
+:host {
+  .nav {
+    background-color: #32cd32;
+    height: 6rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      width: 200px;
+      height: 50px;
+      filter: invert(1);
+    }
+  }
+}

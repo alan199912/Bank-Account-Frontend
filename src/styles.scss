@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+@mixin card {
+  background-color: #32cd32;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  height: 120px;
+  text-decoration: none;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0efef;
+}
+
+.btn {
+  padding: 20px;
+  border-radius: 0.3rem;
+  text-decoration: none;
+
+  &.btn-green {
+    background-color: #32cd32;
+    color: #fff;
+  }
+}

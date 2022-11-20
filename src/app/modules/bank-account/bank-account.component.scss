@@ -1,0 +1,19 @@
+$padding: 2rem;
+
+:host {
+  .container {
+    padding: $padding;
+  }
+
+  .content-button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: $padding;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    border-top: 1px solid #dadfe1;
+    padding-top: 1rem;
+  }
+}

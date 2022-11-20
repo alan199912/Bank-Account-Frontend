@@ -1,0 +1,20 @@
+@import 'src/styles.scss';
+
+:host {
+  .card {
+    @include card;
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .card-text {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+}
